@@ -1,0 +1,157 @@
+
+.color {
+    background-color: white;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 8px 48px rgba(81, 97, 109, 0.16);
+    flex: 1;
+    display: inline-flex;
+    min-width: 185px;
+    flex-direction: column;
+    margin: 2.4rem !important;
+    min-height: 96px;
+    text-align: center;
+    padding-top: 2.4rem;
+    font-weight: 600;
+    font-family: 'Lato';
+    justify-content: space-between;
+    &:last-child {
+        color: white !important;
+    }
+    .css-1u7dolm pre, .css-1u7dolm.prismjs {
+        width: auto !important;
+    }
+    .css-3zww90 {
+        border: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}
+
+// Typography and UI elements
+$white: white;
+$black-600: #1a1c1c;
+$black-500: #3d4a54;
+$black-400: #6e7f8b;
+$black-300: #9daebb;
+$black-200: #ecf3f7;
+$black-100: #f6fafb;
+
+//Product
+$teal-600: #076b76;
+$teal-500: #0aa7b9;
+$teal-400: #36b7c5;
+$teal-300: #63c7d2;
+$teal-200: #8fd7df;
+$teal-100: #e8f7f8;
+
+$green-500: #098363;
+$green-400: #0ecd9a;
+$green-300: #65dfbe;
+$green-200: #bdf1e3;
+$green-100: #e9faf5;
+
+$blue-500: #14448d;
+$blue-400: #1f6add;
+$blue-300: #70a0e9;
+$blue-200: #c1d6f5;
+$blue-100: #eaf1fb;
+
+//Accents
+$purple-300: #493687;
+$purple-200: #7254d3;
+$purple-100: #d8d0f3;
+
+$red-300: #983e3e;
+$red-200: #ee6160;
+$red-100: #fad3d3;
+
+$yellow-300: #9d793a;
+$yellow-200: #f6be5b;
+$yellow-100: #fcedd2;
+
+$color: (
+    black-600: $black-600,
+    black-500: $black-500,
+    black-400: $black-400,
+    black-300: $black-300,
+    black-200: $black-200,
+    black-100: $black-100,
+    teal-600: $teal-600,
+    teal-500: $teal-500,
+    teal-400: $teal-400,
+    teal-300: $teal-300,
+    teal-200: $teal-200,
+    teal-100: $teal-100,
+    green-500: $green-500,
+    green-400: $green-400,
+    green-300: $green-300,
+    green-200: $green-200,
+    green-100: $green-100,
+    blue-500: $blue-500,
+    blue-400: $blue-400,
+    blue-300: $blue-300,
+    blue-200: $blue-200,
+    blue-100: $blue-100,
+    purple-300: $purple-300,
+    purple-200: $purple-200,
+    purple-100: $purple-100,
+    red-300: $red-300,
+    red-200: $red-200,
+    red-100: $red-100,
+    yellow-300: $yellow-300,
+    yellow-200: $yellow-200,
+    yellow-100: $yellow-100,
+);
+
+$typographycolors: (
+    white: $white,
+    black-400: $black-400,
+);
+
+$backgroundcolors: (
+    red-100: $red-100,
+    yellow-100: $yellow-100,
+    green-100: $green-100,
+    teal-100: $teal-100,
+    blue-100: $blue-100,
+    purple-100: $purple-100,
+    black-100: $black-100,
+);
+
+$overlaycolors: (
+    teal-600: $teal-600,
+    teal-500: $teal-500,
+    green-500: $green-500,
+    green-400: $green-400,
+    blue-500: $blue-500,
+    blue-400: $blue-400,
+);
+
+@mixin colors {
+    @each $name, $hex in $color {
+        &--#{$name} {
+            background-color: $hex;
+        }
+    }
+}
+
+.color {
+    @include colors;
+}
+
+@mixin typographycolors {
+    @each $name, $hex in $typographycolors {
+        &--#{$name} {
+            color: $hex;
+        }
+    }
+}
+
+@mixin overlaycolors {
+    @each $name, $hex in $overlaycolors {
+        &--#{$name} {
+            background-color: $hex;
+        }
+    }
+}
+

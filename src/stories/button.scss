@@ -1,0 +1,112 @@
+@import 'global';
+
+:root {
+  --btn-green: #0FA980;
+  --btn-green-hover:  #0B8363;
+  --btn-blue: #1F6ADD;
+  --btn-blue-hover:  #1A57B5;
+}
+$fast: 250ms ease 0s;
+
+.btn {
+  font-family: Lato;
+  font-style: normal;
+  cursor: pointer;
+  color: white;
+  border: 1px solid;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: $fast;
+  &--large {
+    padding: 24px 32px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+  }
+
+  &--medium{
+    padding: 16px 32px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.6px;
+  }
+
+  &--small {
+    padding: 8px 16px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.6px;
+  }
+
+  &--green {
+    background-color: var(--btn-green);
+    border-color: var(--btn-green);
+    &:hover {
+      background-color: var(--btn-green-hover);
+      border-color: var(--btn-green-hover);
+    }
+  }
+
+  &--blue {
+    background-color: var(--btn-blue);
+    border-color: var(--btn-blue);
+    &:hover {
+      background-color: var(--btn-blue-hover);
+      border-color: var(--btn-blue-hover);
+    }
+  }
+
+  &--white {
+    background-color: white;
+    border-color: white;
+    color: #3D4A54;
+    &:hover {
+      background-color: white;
+      border-color: white;
+      color: #303438;
+    }
+  }
+
+  &--secondary {
+    background-color: white;
+    &:hover {
+      background-color: white;
+    }
+    &.btn--green {
+      color: var(--btn-green);
+      &:hover {
+        color: var(--btn-green-hover);
+      }
+    }
+    &.btn--blue {
+      color: var(--btn-blue);
+      &:hover {
+        color: var(--btn-blue-hover);
+      }
+    }
+  }
+
+  &--tertiary {
+    background-color: transparent;
+    border-color: transparent;
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+    }
+    &.btn--green {
+      color: var(--btn-green);
+      &:hover {
+        color: var(--btn-green-hover);
+      }
+    }
+    &.btn--blue {
+      color: var(--btn-blue);
+      &:hover {
+        color: var(--btn-blue-hover);
+      }
+    }
+  }
+}

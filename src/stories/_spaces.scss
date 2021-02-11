@@ -1,0 +1,121 @@
+// Space fundamentals
+$space_xxxs: 0.4rem;
+$space_xxs: 0.8rem;
+$space_xs: 1.6rem;
+$space_s: 2.4rem;
+$space_m: 3.2rem;
+$space_l: 4.8rem;
+$space_xl: 6.4rem;
+$space_xxl: 9.6rem;
+$space_xxxl: 12.8rem;
+
+// Root Font Size
+$root_size: 62.5%;
+$root_size_s: 46.875%;
+
+.xxxs {
+    width: $space_xxxs;
+    height: $space_xxxs;
+}
+.xxs {
+    width: $space_xxs;
+    height: $space_xxs;
+}
+.xs {
+    width: $space_xs;
+    height: $space_xs;
+}
+.s {
+    width: $space_s;
+    height: $space_s;
+}
+.m {
+    width: $space_m;
+    height: $space_m;
+}
+.l {
+    width: $space_l;
+    height: $space_l;
+}
+.xl {
+    width: $space_xl;
+    height: $space_xl;
+}
+.xxl {
+    width: $space_xxl;
+    height: $space_xxl;
+}
+.xxxl {
+    width: $space_xxxl;
+    height: $space_xxxl;
+}
+.mobile {
+    .xxxs {
+        width: 0.4em;
+        height: 0.4em;
+    }
+    .xxs {
+        width: 0.8em;
+        height: 0.8em;
+    }
+    .xs {
+        width: 1.6em;
+        height: 1.6em;
+    }
+    .s {
+        width: 2.4em;
+        height: 2.4em;
+    }
+    .m {
+        width: 3.2em;
+        height: 3.2em;
+    }
+    .l {
+        width: 4.8em;
+        height: 4.8em;
+    }
+    .xl {
+        width: 6.4em;
+        height: 6.4em;
+    }
+    .xxl {
+        width: 9.6em;
+        height: 9.6em;
+    }
+    .xxxl {
+        width: 12.8em;
+        height: 12.8em;
+    }
+}
+
+.space {
+    div.ds {
+        margin-top: 24px !important;
+        margin: auto;
+        display: inline-block;
+        align-self: center;
+        background-color: $green-400;
+    }
+    min-height: 248px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 8px 48px rgba(81, 97, 109, 0.16);
+    flex: 1;
+    display: inline-flex;
+    min-width: 185px;
+    flex-direction: column;
+    margin: 2.4rem !important;
+    text-align: center;
+    padding-top: 2.4rem;
+    font-weight: 600;
+    font-family: 'Lato';
+    justify-content: space-between;
+    .css-1u7dolm pre, .css-1u7dolm.prismjs {
+        width: auto !important;
+    }
+    .css-3zww90 {
+        border: 0 !important;
+        margin-bottom: 0 !important;
+    }
+}

@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+* {
+    font-family: 'Lato', sans-serif;
+}
+@import 'typography';
+@import 'colors';
+@import 'icons';
+
+@import 'spaces';
+.ccolumn {
+    flex-direction: column;
+    display: inline-flex;
+}
+.crow {
+    display: flex;
+    flex-direction: row;
+    margin: 0 -2.4rem !important;
+    &.mobile {
+        .space .ds {
+            font-size: 46.875% !important;
+        }
+    }
+}

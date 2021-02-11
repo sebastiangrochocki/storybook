@@ -1,0 +1,197 @@
+.fill-1,
+.fill-stroke-accent-4-128,
+.fill-stroke-accent-4-64 {
+    fill: #e8f7f8;
+}
+.fill-2,
+.fill-3 {
+    fill: #0aa7b9;
+}
+.fill-2,
+.fill-accent-1,
+.fill-accent-2,
+.stroke-accent-transparent-128,
+.stroke-accent-transparent-64 {
+    opacity: 0.2;
+}
+.fill-2,
+.fill-accent-2,
+.stroke-accent-transparent-128,
+.stroke-accent-transparent-64 {
+    isolation: isolate;
+}
+.fill-accent-1,
+.stoke-light-64,
+.stroke-128,
+.stroke-64,
+.stroke-accent-128,
+.stroke-accent-64,
+.stroke-accent-transparent-128,
+.stroke-accent-transparent-64,
+.stroke-light-128 {
+    fill: none;
+}
+.fill-stroke-128,
+.fill-stroke-64,
+.stroke-128,
+.stroke-64 {
+    stroke: #0aa7b9;
+}
+.fill-stroke-128,
+.fill-stroke-64,
+.fill-stroke-accent-128,
+.fill-stroke-accent-4-128,
+.fill-stroke-accent-4-64,
+.stoke-light-64,
+.stroke-128,
+.stroke-64,
+.stroke-accent-128,
+.stroke-accent-64,
+.stroke-accent-transparent-128,
+.stroke-accent-transparent-64,
+.stroke-fill-light-128,
+.stroke-fill-light-64,
+.stroke-light-128 {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.fill-stroke-128,
+.fill-stroke-accent-128,
+.fill-stroke-accent-4-128,
+.stroke-128,
+.stroke-accent-128,
+.stroke-accent-transparent-128,
+.stroke-fill-light-128,
+.stroke-light-128 {
+    stroke-width: 2px;
+}
+.fill-stroke-accent-128,
+.fill-stroke-accent-64 {
+    fill: #ed7279;
+}
+.fill-stroke-accent-128,
+.fill-stroke-accent-64,
+.stroke-accent-128,
+.stroke-accent-64 {
+    stroke: #ed7279;
+}
+.fill-stroke-accent-64 {
+    stroke-linecap: square;
+    stroke-miterlimit: 10;
+}
+.stoke-light-64,
+.stroke-fill-light-128,
+.stroke-fill-light-64,
+.stroke-light-128 {
+    stroke: #bce7eb;
+}
+.stroke-fill-light-128,
+.stroke-fill-light-64 {
+    fill: #bce7eb;
+}
+.fill-stroke-accent-4-128,
+.fill-stroke-accent-4-64,
+.stroke-accent-transparent-128,
+.stroke-accent-transparent-64 {
+    stroke: #f17d7c;
+}
+.fill-accent-2,
+.fill-accent-3 {
+    fill: #f17d7c;
+}
+.fill-stroke-128,
+.fill-stroke-64 {
+    fill: #fff;
+}
+.stroke-transparent-64,
+.stroke-transparent-128 {
+    stroke: #bce7eb;
+}
+.stroke-transparent-128 {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+}
+.stroke-transparent-64 {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1px;
+}
+
+.icon--green {
+    .fill-2,
+    .fill-3 {
+        fill: #0ecd9a;
+    }
+    .fill-stroke-128,
+    .fill-stroke-64,
+    .stroke-128,
+    .stroke-64 {
+        stroke: #0ecd9a;
+    }
+    .stroke-fill-light-128,
+    .stroke-fill-light-64 {
+        stroke: #e9faf5;
+    }
+    .stroke-fill-light-128,
+    .stroke-fill-light-64 {
+        fill: #e9faf5;
+    }
+    .fill-1,
+    .fill-stroke-accent-4-128,
+    .fill-stroke-accent-4-64 {
+        fill: #e9faf5;
+    }
+    .stroke-transparent-64,
+    .stroke-transparent-128,
+    .stroke-light-128,
+    .stroke-light-64 {
+        stroke: #bdf1e3;
+    }
+}
+.icon--blue {
+    .fill-2,
+    .fill-3 {
+        fill: #1f6add;
+    }
+    .fill-stroke-128,
+    .fill-stroke-64,
+    .stroke-128,
+    .stroke-64 {
+        stroke: #1f6add;
+    }
+    .stroke-fill-light-128,
+    .stroke-fill-light-64 {
+        stroke: #eaf1fb;
+    }
+    .stroke-fill-light-128,
+    .stroke-fill-light-64 {
+        fill: #eaf1fb;
+    }
+    .fill-1,
+    .fill-stroke-accent-4-128,
+    .fill-stroke-accent-4-64 {
+        fill: #eaf1fb;
+    }
+    .stroke-transparent-64,
+    .stroke-transparent-128,
+    .stroke-light-128,
+    .stoke-light-64 {
+        stroke: #c1d6f5;
+    }
+}
+
+svg.icon--green,
+svg.icon--blue, svg.icon--teal {
+    max-width: 128px;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+    display: block;
+    overflow: visible;
+    width: 100%;
+    &[viewBox="0 0 64 64"] {
+        max-width: 128px;
+        width: 100%;
+    }
+}
