@@ -17,6 +17,10 @@ $fast: 250ms ease 0s;
   border-radius: 4px;
   text-transform: uppercase;
   transition: $fast;
+  &:focus {
+    box-shadow: 0 0 0 2px var(--btn-green-hover);
+    outline: 0;
+  }
   &--large {
     padding: 24px 32px;
     font-weight: 900;

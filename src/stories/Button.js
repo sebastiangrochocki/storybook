@@ -5,10 +5,11 @@ import './button.scss';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ color, type, backgroundColor, size, label, ...props }) => {
+export const Button = ({color, type, autoFocus, state, backgroundColor, size, label, ...props }) => {
   // const mode = type ? 'btn--primary' : 'btn--secondary';
   return (
-    <button
+    <button 
+      ref={button => button && button.focus()}
       type="button" 
       className={['btn', `btn--${size}`, `btn--${type}`, `btn--${color}`].join(' ')}
       style={backgroundColor && { backgroundColor }}
@@ -36,6 +37,8 @@ Button.propTypes = {
    * How large should the button be?
    */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
+  state: PropTypes.bool,
+
   /**
    * Button contents
    */
@@ -52,5 +55,6 @@ Button.defaultProps = {
   type: 'primary',
   size: 'medium',
   color: 'green',
+  state: true,
   onClick: undefined,
 };
